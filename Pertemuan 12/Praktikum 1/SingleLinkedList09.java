@@ -8,7 +8,7 @@ public class SingleLinkedList09 {
     void print() {
         if (!isEmpty()) {
             NodeMahasiswa09 tmp = head;
-            System.out.print("Isi Linked List:\t");
+            System.out.println("Isi Linked List:\t");
             while (tmp != null) {
                 tmp.data.tampilInformasi();
                 tmp = tmp.next;
