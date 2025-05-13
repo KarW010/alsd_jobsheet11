@@ -18,12 +18,22 @@ public class SLLMain09 {
             System.out.print("Kelas: ");
             String kelas = sc.nextLine();
             System.out.print("IPK: ");
-            double ipk = sc.nextDouble(); 
-            sc.nextLine(); 
+            double ipk = sc.nextDouble(); sc.nextLine();
 
             Mahasiswa09 mhs = new Mahasiswa09(nim, nama, kelas, ipk);
-
             sll.addLast(mhs);
+            sll.print();
+            
+            System.out.println("data index 1 : ");
+            sll.getData(1);
+
+            System.out.println("data mahasiswa an Bimon berada pada index : " + sll.indexOf("bimon"));
+            System.out.println();
+
+            sll.removeFirst();
+            sll.removeLast();
+            sll.print();
+            sll.removeAt(0);
             sll.print();
         }
     }
