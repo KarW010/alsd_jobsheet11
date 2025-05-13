@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class SLLMain09 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        SingleLinkedList09 data = new SingleLinkedList09();
+        SingleLinkedList09 sll = new SingleLinkedList09();
 
         System.out.print("Masukkan jumlah data mahasiswa: ");
         int jumlah = sc.nextInt(); 
@@ -23,8 +23,8 @@ public class SLLMain09 {
 
             Mahasiswa09 mhs = new Mahasiswa09(nim, nama, kelas, ipk);
 
-            data.addLast(mhs);
-            data.print();
+            sll.addLast(mhs);
+            sll.print();
         }
     }
 }
